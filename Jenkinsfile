@@ -8,12 +8,6 @@ pipeline {
           git branch: 'main', url: 'https://github.com/Arora-Arpita/lbg-vat-calculator.git'
         }
     }
-    stage('Install') {
-        steps {
-            // Install the ReactJS dependencies
-            sh "npm install"
-        }
-    }
     stage('Test') {
         steps {
           // Run the ReactJS tests
